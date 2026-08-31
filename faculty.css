@@ -1,8 +1,6 @@
 /* VN PREMIUM FACULTY CSS */
 .vn-faculty-section{
-
     padding:40px 8% 100px;
-
 }
 .vn-faculty-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;margin-top:60px;}
 .vn-faculty-card{position:relative;overflow:hidden;background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:40px 30px;text-align:center;transition:.4s;}
@@ -16,75 +14,39 @@
 /* ==========================================
             FACULTY HERO
 ========================================== */
-
 .faculty-hero{
-
     padding:140px 8% 60px;
-
     text-align:center;
-
 }
-
 .faculty-hero .hero-content{
-
     max-width:900px;
-
     margin:auto;
-
 }
-
 .faculty-hero .hero-top{
-
     color:#FBBF24;
-
     font-size:15px;
-
     letter-spacing:4px;
-
     text-transform:uppercase;
-
     margin-bottom:18px;
-
 }
-
 .faculty-hero h1{
-
     font-size:clamp(2.8rem,6vw,4.8rem);
-
     color:#ffffff;
-
     margin-bottom:20px;
-
     line-height:1.15;
-
 }
-
 .faculty-hero h1 span{
-
     color:#FBBF24;
-
 }
-
 .faculty-hero .hero-description{
-
     max-width:720px;
-
     margin:auto;
-
     color:#dbeafe;
-
     line-height:1.9;
-
     font-size:18px;
-
 }
-
 @media(max-width:900px){
-
     .faculty-hero{
-
         padding:100px 6% 40px;
-
     }
-
 }
