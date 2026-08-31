@@ -2899,3 +2899,10 @@ form select option {
         line-height: 1.7;
     }
 }
+@media (max-width:768px){
+    .commerce-text{
+        width:auto;
+        border-right:none;
+        animation:none;
+    }
+}
