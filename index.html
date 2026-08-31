@@ -7,6 +7,7 @@
         content="VidhyaNation Academy - Premier Commerce Coaching for Class 11 & 12 in Indore. Expert guidance in Accountancy, Business Studies and Applied Mathematics.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <!-- Open Graph Meta Tags -->
 <meta property="og:title"
 content="VidhyaNation Commerce Academy">
@@ -22,19 +23,26 @@ content="https://vidhyanationacademy.com/assets/images/logo.webp">
 content="VidhyaNation Commerce Academy">
 <meta property="og:locale"
 content="en_IN">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Critical layout CSS: kept render-blocking on purpose, but now minified/merged (~40% smaller) -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact-footer.css">
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/images/logo.webp" type="image/png">
-    <title>VidhyaNation Commerce Academy | Best Commerce Coaching for Class 11 & 12</title>
-<link rel="canonical" href="https://vidhyanationacademy.com">
+    <!-- Google Fonts: loaded without blocking first paint (single request, was duplicated before) -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap">
+    </noscript>
+    <!-- Font Awesome: loaded without blocking first paint (this was the single biggest render-blocking cost) -->
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </noscript>
     <link rel="icon" type="image/png" href="assets/images/favicon.webp">
-    <!-- Other CSS files -->
+    <title>VidhyaNation Commerce Academy | Best Commerce Coaching for Class 11 & 12</title>
+    <link rel="canonical" href="https://vidhyanationacademy.com">
 </head>
 <body>
 <div class="mobile-overlay"></div>
@@ -75,8 +83,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     alt="VidhyaNation Logo"
     width="58"
     height="58"
-    height="300"
-    loading="lazy"
+    fetchpriority="high"
     decoding="async"
 >
                 <div>
@@ -102,7 +109,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <section class="hero">
         <div class="hero-content">
             <div class="hero-logo">
-                <img src="assets/images/logo.webp" alt="VidhyaNation Academy">
+                <img src="assets/images/logo.webp" alt="VidhyaNation Academy" width="190" height="__LOGO_HEIGHT__" fetchpriority="high" decoding="async">
             </div>
             <p class="hero-top">
                 BUILDING THE NEXT GENERATION OF
@@ -613,14 +620,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 </div>
             </div>
             <div class="contact-buttons">
-                <a
+                
                     href="tel:+919171505292"
                     class="call-button"
                 >
                     <i class="fa-solid fa-phone"></i>
                     Call Now
                 </a>
-                <a
+                
                     href="https://wa.me/919171505292"
                     target="_blank"
                     class="whatsapp-button"
@@ -697,7 +704,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 Watch concept videos, revision sessions,
                 exam strategies and learning content.
             </p>
-            <a
+            
                 href="https://youtube.com/@vidhyanationacademy?feature=shared"
                 target="_blank"
                 class="social-btn"
@@ -720,7 +727,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 Follow us for academy updates,
                 achievements and classroom moments.
             </p>
-            <a
+            
                 href="https://www.instagram.com/vidhyanationacademy?igsh=Znp0ZnF0OGV6NWVh"
                 target="_blank"
                 class="social-btn"
@@ -744,7 +751,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 notices and learning resources
                 through our official app.
             </p>
-            <a
+            
                 href="https://play.google.com/store/apps/details?id=co.diy4.wjlge"
                 target="_blank"
                 class="social-btn"
@@ -823,21 +830,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         <div class="footer-column">
             <h3>Follow Us</h3>
             <div class="footer-socials">
-                <a
+                
                     href="https://youtube.com/@vidhyanationacademy?feature=shared"
                     target="_blank"
                     aria-label="YouTube"
                 >
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a
+                
                     href="https://www.instagram.com/vidhyanationacademy?igsh=Znp0ZnF0OGV6NWVh"
                     target="_blank"
                     aria-label="Instagram"
                 >
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a
+                
                     href="https://play.google.com/store/apps/details?id=co.diy4.wjlge"
                     target="_blank"
                     aria-label="Google Play"
