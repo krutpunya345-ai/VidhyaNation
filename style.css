@@ -42,7 +42,7 @@ body{
 
         ),
 
-        url("assets/images/background-website.png");
+        url("assets/images/background-website.webp");
 
     background-size:cover;
 
@@ -95,7 +95,7 @@ body{
 
         ),
 
-        url("assets/images/background-website.png");
+        url("assets/images/background-website.webp");
 
     background-size:cover;
 
@@ -3506,7 +3506,7 @@ body{
         rgba(40,5,15,.55),
         rgba(20,2,10,.70)
     ),
-    url("assets/images/background-website.png");
+    url("assets/images/background-website.webp");
 
 background-size: cover;
 
