@@ -508,3 +508,89 @@ to{opacity:1;transform:scale(1)}
 .hero-description{font-size:15px;line-height:1.7}
 .commerce-text{width:auto;border-right:none;animation:none}
 }
+@media (max-width: 768px){
+
+    body{
+        background-attachment:scroll;
+    }
+
+    .gradient-layer{
+        background-image:linear-gradient(
+            rgba(40,0,0,.18),
+            rgba(40,0,0,.22)
+        );
+    }
+}
+@media (max-width: 768px){
+
+    .glow,
+    .floating-symbol,
+    .chart-line,
+    .particle,
+    .candles{
+        display:none;
+    }
+
+}@media (max-width: 768px){
+
+    .highlight-card,
+    .glass-card,
+    .feature-card,
+    .testimonial-card,
+    .faq-item{
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+        background:rgba(35,10,30,.92);
+    }
+
+}
+@media (max-width: 768px){
+
+    .commerce-text{
+        width:auto;
+        animation:none;
+        border-right:none;
+    }
+
+}
+@media (max-width: 768px){
+
+    .hero-logo{
+        animation:none;
+    }
+
+}
+@media (max-width:768px){
+
+    .demo-card{
+        padding:30px;
+        border-radius:22px;
+
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+
+        background:rgba(35,10,30,.92);
+    }
+
+    .demo-card h2{
+        font-size:2rem;
+    }
+
+    .demo-card p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .demo-buttons{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .call-btn,
+    .whatsapp-btn,
+    .demo-card > .primary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
